@@ -30,8 +30,7 @@ public class CubeContollerBehavior : MonoBehaviour
             
         ray = Camera.main.ScreenPointToRay(Input.mousePosition);
        
-        
-        // 以下、キャラクターの移動処理
+       
         velocity = new Vector3(ray.direction.x, ray.direction.y,0);
         velocity.z = 0;
         velocity *= speed;
